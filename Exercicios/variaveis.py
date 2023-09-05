@@ -9,11 +9,11 @@ print(nome, idade)
 
 
 VALORANT_ELO = [
-    "ferro"
-    "bronze"
-    "prata"
-    "gold"
-    "platina"
+    "Ferro"
+    "Bronze"
+    "Prata"
+    "Gold"
+    "Platina"
     "Diamante"
     "Ascendente"
     "Imortal"
