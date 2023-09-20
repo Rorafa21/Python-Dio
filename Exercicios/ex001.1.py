@@ -4,21 +4,22 @@
 #sabendo que a conta universitaria não tem direito a cheque especial como a conta normal
 import sys
 
-conta_normal = True
-conta_universitaria = False
+conta_normal = False
+conta_universitaria = True
 
 saldo = 2000
-saque = 1500
+saque = 500
 cheque = 450
 
 if conta_normal:
-    if saque >= saldo:
+    if saldo >= saque:
         print("Saque realizado com sucesso!")
-    elif saque > (saldo + cheque):
+    elif saque <= (saldo + cheque):
         print("Saque realizado com sucesso.")
     else:
         print("Não foi possivel realizar o saque. O valor ultrapassa o saldo em conta e cheque especial!")
 elif conta_universitaria:
-    if saque>= saldo:
-        print("Saque efetuado com sucesso!")
-                
+    status = "Sucesso" if saque <= saldo else "Falha"
+    print(f"{status} ao executar o saque")
+else:
+    sys.exit("Não foi possivel reconhecer o tipo de conta.")
