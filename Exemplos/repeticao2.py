@@ -14,3 +14,5 @@ if idade >= 18:
         print("Certo sera emitido o boleto e enviado por email.")
     else:
         sys.exit("Opção invalida")
+else:
+    print("Você não tem a idade necessária para continuar o atendimento. ;-;")
