@@ -6,3 +6,5 @@ if opcao == 1:
     saque = float(input("Informe o Valor que deseja sacar: "))
     saldo -= saque
     print(saldo)
+elif opcao == 2:
+    print(f"O valor em sua conta é de R${saldo}")
