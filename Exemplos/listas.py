@@ -1,5 +1,5 @@
 cadastro = []
-register = True
+register = False
 
 while register == True:
     
@@ -14,3 +14,15 @@ while register == True:
     print(cadastro)
 
     break
+###################################################################
+nomes = ['Rodrigo', "Itamar", "Kel"]
+cond = True
+
+while cond == True:
+    print(f"Ola {nomes[0]}")
+    print(f"Ola {nomes[1]}")
+    print(f"Ola {nomes[2]}")
+
+    break
+###################################################################
+
